@@ -1,10 +1,10 @@
 #include "DoubleContainer.h"
 
-DoubleContainer::DoubleContainer( char nameBi[], char name1[], int unit1, double capacity1, double filled1, char name2[], int unit2, double capacity2, double filled2)
+DoubleContainer::DoubleContainer( char nameDoubleContainer[], char name1[], int unit1, double capacity1, double filled1, char name2[], int unit2, double capacity2, double filled2)
 	:container1(name1,unit1,capacity1,filled1),
 	container2(name2,unit2,capacity2,filled2)
 {
-	strcpy( this->name, nameBi );
+	strcpy( this->name, nameDoubleContainer );
 	this->unit = container1.unit;
 	this->capacity = container1.capacity + container2.capacity;
 	this->filled = container1.filled + container2.filled;
